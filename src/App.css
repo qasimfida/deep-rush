@@ -13,36 +13,60 @@
 	z-index: 1;
 	overflow: hidden;
 }
+
 .spotlight {
 	position: absolute;
 	top: 0;
 	left: -600px;
 	width: 1200px;
 	height: 100%;
-	background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1), transparent ,rgba(0, 0, 0, 1),rgba(0, 0, 0, 1),rgba(0, 0, 0, 1), rgba(0, 0, 0, 1),rgba(0, 0, 0, 1));
+	background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), transparent, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 	z-index: 2;
 	animation: move-light 5s linear infinite;
 }
 
 
 @keyframes move-light {
-       0% {
-        left: -600px;
-      }
-      50% {
-        left: -100px;
-      }
-      100% {
-        left: -600px;
-      }
-    }
+	0% {
+		left: -600px;
+	}
+
+	50% {
+		left: -100px;
+	}
+
+	100% {
+		left: -600px;
+	}
+}
+
+@media (max-width: 768px) {
+	.spotlight {
+		left: -400px;
+		width: 800px;
+	}
+
+	@keyframes move-light {
+		0% {
+			left: -400px;
+		}
+
+		50% {
+			left: -100px;
+		}
+
+		100% {
+			left: -400px;
+		}
+	}
+}
 
 .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-	  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	position: relative;
 }
 
 @media (max-width: 768px) {
