@@ -1,6 +1,5 @@
 import './App.css'
 import rush from './assets/rush.png'
-import bg from "./assets/bg.png"
 import logo from "./assets/logo.png"
 
 
