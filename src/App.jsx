@@ -1,5 +1,5 @@
 import './App.css'
-import rush from './assets/rush.png'
+import rush from './assets/rush.gif'
 import logo from "./assets/logo.png"
 
 
@@ -10,13 +10,12 @@ function App() {
       <div className={`flex w-screen min-h-screen  font-helvetica-neue bg-black `}
       >
         <div className="w-full px-5">
-          <div className="py-6 ">
+          <a href="https://deepfi.tools/" target="_blank" rel="noopener noreferrer" className="block py-6 decoration-none">
             <img src={logo} alt="deepfi" />
-          </div>
+          </a>
           <div className="">
             <div className="relative z-10 flex flex-col items-center text-center md:mt-[144px] mt-16 ">
               <div className="flex items-center overflow-hidden content">
-                <div class="spotlight"></div>
                 <h2 className="font-bold deep-text ">DeepRush</h2>
               </div>
 
