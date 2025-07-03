@@ -1,5 +1,5 @@
 import './App.css'
-import rush from './assets/rush.gif'
+import rush from './assets/rush.png'
 import logo from "./assets/logo.png"
 
 
@@ -25,11 +25,14 @@ function App() {
                 Revving Soon
               </button>
             </div>
-            <img
-              src={rush}
-              alt="Games Animation"
-              className="z-0 w-[888px] max-w-full mx-auto relative left-0 right-0 bottom-0 md:-mt-7"
-            />
+            <div className="relative bottom-0 left-0 right-0 overflow-hidden md:-mt-7  w-[888px] max-w-full mx-auto">  
+              <div className="spotlight"></div>
+              <img
+                src={rush}
+                alt="Games Animation"
+                className="z-0 w-[888px] max-w-full mx-auto relative  transform rotate-y-180"
+              />
+            </div>
             <footer className="fixed md:bottom-12 bottom-6 left-0 right-0 mx-auto z-10 flex flex-wrap items-center justify-center w-full gap-3 py-4 text-sm font-normal tracking-wide text-center text-[#ACAFBB] md:flex-nowrap md:flex">
               <p>©2025 DeepRush, a DeepFi Project.</p>
               <p>All Rights Reserved.</p>
