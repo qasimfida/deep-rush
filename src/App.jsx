@@ -9,7 +9,7 @@ function App() {
 
       <div className={`flex w-screen min-h-screen  font-helvetica-neue bg-black `}
       >
-        <div className="w-full px-5">
+        <div className="relative z-10 w-full px-5">
           <a href="https://deepfi.tools/" target="_blank" rel="noopener noreferrer" className="block py-6 decoration-none">
             <img src={logo} alt="deepfi" />
           </a>
